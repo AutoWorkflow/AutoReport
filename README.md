@@ -20,7 +20,7 @@
 到这一步就已经可以自动运行了，如果想修改打卡的选项或每天自动打卡的时间请查看下面的**配置文件**部分
 
 ### 4. 如何取消自动运行    
-删除.github/workflows/report.yml文件，    
+删除.github/workflows/main.yml文件，    
 或者在Setting->Action->选择Disable Actions for this repository。该仓库的工作流将不再运行
 
 ## 配置文件    
