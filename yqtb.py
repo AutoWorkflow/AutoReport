@@ -68,7 +68,6 @@ def submit(username, password, address, params=None):
 
     fields = form_dict['fields']
     form = { dict['field_code']: dict['user_set_value'] for dict in fields }
-    # pprint(form)
     
     for key, value in params.items():
         if not value:
@@ -77,5 +76,5 @@ def submit(username, password, address, params=None):
     
     if address != "":
         form['zddw'] = address
-        
+    print(form)
     punchForm(form, s)
