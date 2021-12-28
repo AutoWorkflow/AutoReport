@@ -76,5 +76,5 @@ def submit(username, password, address, params=None):
     
     if address != "":
         form['zddw'] = address
-    print(form)
+
     punchForm(form, s)
