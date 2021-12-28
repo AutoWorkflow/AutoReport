@@ -11,12 +11,14 @@
 
 &nbsp;&nbsp;&nbsp;&nbsp;点击Settings->Sectets->New Secrets，添加:    
 
-|          |       |
-| -------- | ----- |  
+| NAME     | VALUE  |
+| -------- | -----  |  
 | USERNAME | 用户名 |   
-| PASSWORD | 密码  |   
+| PASSWORD | 密码   |   
 | ADDRESS  | 打卡地点 |
-  
+
+打开地点的格式: *定位*<@>*详细地址*    
+例：中国,辽宁省,沈阳市,铁西区<@>沈阳工业大学 
 
 ### 3. 测试配置
 &nbsp;&nbsp;&nbsp;&nbsp;打开Actions，在Select workflow处选择daily deport，执行Run workflow，查看运行日志    
@@ -34,8 +36,6 @@ config.yml
 ```
 jrcltw:    
   今日测量体温 注意：一定要加引号，不然会提交失败
-zddw:    
-  自动定位，用"<@>"隔开，例如：中国,辽宁省,沈阳市,铁西区<@>沈阳工业大学    
 mqszd:
   目前所在地：沈阳市/辽宁省非沈阳市/其他地区(非辽宁省)    
 sfybh:    
@@ -45,7 +45,7 @@ xcsj:
 ```
 ### 配置自动运行时间
 每日任务执行的时间，由.github/workflows/report.yml 中的cron表达式指定，    
-默认的执行时间为每日的11点整和16点:
+默认的执行时间为每日的11点和16点:
 ```
 on:
   schedule:
