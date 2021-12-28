@@ -59,7 +59,7 @@ def punchForm(form, session):
     print(res_json)
 
 
-def submit(username, password, params=None):
+def submit(username, password, address, params=None):
     s = login(username, password)
     # result = s.post(root_url + '/getHomeDate', headers=headers)
 
@@ -74,5 +74,8 @@ def submit(username, password, params=None):
         if not value:
             value = 'null'
         form[key] = value
-
+    
+    if address != "":
+        form['zddw'] = address
+        
     punchForm(form, s)
