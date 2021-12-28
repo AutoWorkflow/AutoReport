@@ -9,11 +9,15 @@
   
 ### 2. 设置用户名和密码  
 
-&nbsp;&nbsp;&nbsp;&nbsp;点击Settings->Sectets->New Secrets，依次添加:  
+&nbsp;&nbsp;&nbsp;&nbsp;点击Settings->Sectets->New Secrets，添加:    
+
+|          |       |
+| -------- | ----- |  
+| USERNAME | 用户名 |   
+| PASSWORD | 密码  |   
+| ADDRESS  | 打卡地点 |
   
-  > USERNAME 用户名（学号)    
-  > PASSWORD 密码    
-  
+
 ### 3. 测试配置
 &nbsp;&nbsp;&nbsp;&nbsp;打开Actions，在Select workflow处选择daily deport，执行Run workflow，查看运行日志    
     
