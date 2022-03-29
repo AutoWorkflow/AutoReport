@@ -55,5 +55,5 @@ on:
 ## 本地运行
 ```
 pip install -r requirements.txt
-python report.py -u 用户名（学号） -p 密码
+python report.py -u 用户名（学号） -p 密码 -a 打卡地点
 ```
