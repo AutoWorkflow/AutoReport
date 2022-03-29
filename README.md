@@ -5,7 +5,7 @@
 ## 配置Actions
 ### 1. fork到自己的仓库  
 
-&nbsp;&nbsp;&nbsp;&nbsp;点击右上角的fork，完成后会自动跳转到你fork的仓库  
+&nbsp;&nbsp;&nbsp;&nbsp;点击右上角的fork，完成后会自动跳转    
   
 ### 2. 设置用户名和密码  
 
