@@ -3,10 +3,11 @@ import json
 import datetime
 # from pprint import pprint
 headers = {
-    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4395.0 Safari/537.36',
+    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36 Edg/106.0.1370.42',
     'Accept': 'application/json, text/javascript, */*; q=0.01',
     'Content-Type': 'application/json',
-    'X-Requested-With': 'XMLHttpRequest'
+    'X-Requested-With': 'XMLHttpRequest',
+    'Referer': 'https://yqtb.sut.edu.cn'
 }
 
 root_url = 'https://yqtb.sut.edu.cn'
