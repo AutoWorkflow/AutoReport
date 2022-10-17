@@ -18,7 +18,7 @@ def login(username, password):
     s = requests.Session()
 
     login_reply = s.post(login_url, data=login_data, headers=headers, verify=False)
-    print(login_reply)
+
     login_result = json.loads(login_reply.content)
 
     if(login_result['code'] != 200):
